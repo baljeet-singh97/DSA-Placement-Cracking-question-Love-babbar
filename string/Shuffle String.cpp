@@ -16,3 +16,18 @@ public:
 };
 
 https://leetcode.com/problems/shuffle-string/
+
+#2nd sol
+class Solution {
+public:
+    string restoreString(string s, vector<int>& indices) 
+    {
+        
+        string res = s;
+        for(int i=0; i<indices.size(); i++)
+        {
+            res[indices[i]]=s[i];
+        }
+        return res;
+    }
+};
